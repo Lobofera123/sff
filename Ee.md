@@ -8,7 +8,7 @@ local ESP = {
     FaceCamera = false,
     Names = true,
     TeamColor = true,
-    Thickness = 2,
+    Thickness = 1,
     AttachShift = 1,
     TeamMates = true,
     Players = true,
@@ -307,7 +307,7 @@ function ESP:Add(obj, options)
 	box.Components["Tracer"] = Draw("Line", {
 		Thickness = ESP.Thickness,
 		Color = box.Color,
-        Transparency = 1,
+        Transparency = 0.2,
         Visible = self.Enabled and self.Tracers
     })
     self.Objects[obj] = box
