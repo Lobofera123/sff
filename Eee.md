@@ -307,7 +307,7 @@ function ESP:Add(obj, options)
 	box.Components["Tracer"] = Draw("Line", {
 		Thickness = ESP.Thickness,
 		Color = box.Color,
-        Transparency = 0.2,
+        Transparency = 0.3,
         Visible = self.Enabled and self.Tracers
     })
     self.Objects[obj] = box
